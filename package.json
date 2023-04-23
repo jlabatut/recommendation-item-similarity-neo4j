@@ -1,0 +1,32 @@
+{
+  "name": "recommendations-item-similarity-neo4j",
+  "version": "1.0.0",
+  "description": "Polyflix recommendation system using Neo4j - Content-based (Item similarity)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlabatut/recommendation-item-similarity-neo4j"
+  },
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "populate": "node build/import/populate.js",
+    "start:dev": "nodemon --exec ts-node src/index.ts",
+    "start:prod": "node build/index.js"
+  },
+  "author": "Julian Labatut",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "neo4j-driver": "^5.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

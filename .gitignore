@@ -1,0 +1,5 @@
+node_modules
+build
+data/neo4j
+
+.env
